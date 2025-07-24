@@ -42,6 +42,9 @@ li {
 
 /* Header */
 .header {
+    margin-top: 5%;
+  width: 100%;
+
   background: #0f172a;
   color: #ffffff;
   text-align: center;
@@ -88,7 +91,7 @@ section {
 
 /* National Symbols */
 .national-symbols .symbol {
-  background: #b3cde8;
+  background: rgba(255, 255, 255, 0.6);
   padding: 1rem;
   border-radius: 10px;
   margin-bottom: 1.5rem;
@@ -106,8 +109,8 @@ section {
 
 /* General Info List */
 .general-info ul {
-  background-color: #f9fafb;
-  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 3rem;
   border-radius: 10px;
   list-style: disc;
 }
@@ -139,5 +142,8 @@ section {
 
   section {
     padding: 1.5rem 1rem;
+  }
+  .header{
+    margin-top: 18%;
   }
 }

@@ -281,5 +281,8 @@ ul {
   .hero-subtitle {
     font-size: 1rem;
   }
+    .btn-primary{
+        display: none;
+    }
 }
 

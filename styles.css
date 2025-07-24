@@ -1,0 +1,285 @@
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 13px;
+  height: 12px;
+  background: #facc15;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  /* transition: transform 0.1s ease; */
+  z-index: 1000;
+  box-shadow: 0 0 10px #facc15, 0 0 20px #facc15;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #2E2E2E;
+  overflow-x: hidden;
+  cursor: none; 
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  cursor: none;
+}
+ul {
+  list-style: none;
+}
+
+/* Header Styles */
+.site-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  box-shadow: 0 5px 10px rgba(4, 4, 4, 0.4);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1A237E;
+}
+.logo span {
+  color: #FF9933;
+}
+
+/* Navigation */
+.nav-links li {
+  display: inline-block;
+  margin-left: 2rem;
+}
+.nav-links a {
+  color: #d0d0d0;
+  font-weight: 700;
+    font-size: 1rem;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #138808;
+  background-image: url("./assets/india2.png");
+  padding: 0.6rem;
+  background-size: cover;
+  font-size: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-blend-mode:lighten;
+
+}
+
+/* Call-to-Action Button */
+.btn-primary {
+  background-color: #138808;
+  color: #FFFFFF;
+  padding: 0.6rem 1.4rem;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #0f6e06;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url("https://www.hdwallpapers.in/download/the_taj_mahal_at_sunset_india-normal.jpg") center/cover no-repeat;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 800px;
+  padding: 0 1rem;
+  color: #FFFFFF;
+  animation: fadeIn 1.4s ease-out both;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: #FF9933;
+    text-shadow: 2px 2px 4px #000;
+}
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500&display=swap');
+
+.hero-subtitle {
+  font-family: 'Hind', sans-serif;
+  font-size: 1.5rem;
+  /* font-size: 1.2rem; */
+  margin-bottom: 2rem;
+  color: #FDF6EC;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Secondary Button */
+.btn-secondary {
+  display: inline-block;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  padding: 0.6rem 1.4rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-secondary:hover {
+  background-color: #FFFFFF;
+  color: #1A237E;
+}
+
+/* About Section with Video Background */
+.about-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+    padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);}
+.bg-video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.6);
+}
+.about-content {
+  max-width: 800px;
+  padding: 1rem;
+  animation: fadeIn 1.6s ease-out both;
+}
+.section-title {
+  font-size: 2.5rem;
+  color: #FF9933;
+  margin-bottom: 1rem;
+}
+.section-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+/* Gallery Styles */
+.gallery-section {
+  padding: 4rem 2rem;
+  background: #f3f4f6;
+  text-align: center;
+  background-image: url('./assets/gallery_bg.jpg');
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #2E2E2E;
+}
+.gallery-flex {
+  display: flex;
+  flex-wrap: wrap;  
+    justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Hover Hindi to English Transition */
+.hover-toggle {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.hover-toggle::after {
+  content: attr(data-alt);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.hover-toggle:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hover-toggle:hover {
+  color: transparent;
+}
+
+
+
+
+/* Fade-in Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+  }
+  .nav-links {
+    margin: 1rem 0;
+  }
+  .hero-title {
+    font-size: 2.4rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+

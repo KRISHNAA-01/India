@@ -113,7 +113,7 @@ ul {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url("https://www.hdwallpapers.in/download/the_taj_mahal_at_sunset_india-normal.jpg") center/cover no-repeat;
+  background: url("./assets/the_taj_mahal_at_sunset_india.jpg") center/cover no-repeat;
 }
 .hero-overlay {
   position: absolute;
